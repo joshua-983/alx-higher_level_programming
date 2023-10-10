@@ -1,3 +1,5 @@
+100-matrix_mul.txt
+
 # 100-matrix_mul.txt
 
 ============================
@@ -235,4 +237,5 @@ equivalent. Otherwise, a TypeError is raised.
     >>> print(matrix_mul(m_a, m_b))
     Traceback (most recent call last):
     TypeError: each row of m_a must should be of the same size
+
 
