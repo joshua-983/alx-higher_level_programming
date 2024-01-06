@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""0x11. Python - Network #1, task 0. What's my status? #0
+"""
 
 if __name__ == "__main__":
     # Importing the request module from urllib library
