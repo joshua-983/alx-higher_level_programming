@@ -1,3 +1,3 @@
 #!/bin/bash
-# displays only the status code of the response
-curl -s "$1" -o /dev/null -w "%{http_code}"
+# script that sends DELETE request to URL passed as first arg
+curl -s "$1" -X DELETE
