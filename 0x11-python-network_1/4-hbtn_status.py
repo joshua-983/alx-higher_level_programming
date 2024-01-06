@@ -1,17 +1,14 @@
 #!/usr/bin/python3
 """Fetches the URL: https://intranet.hbtn.io/status
-with `urllib` module
+with `requests` module
 """
 
-from urllib import request
+import requests
+
 
 if __name__ == "__main__":
-    url = 'https://intranet.hbtn.io/status'
-
-    with request.urlopen(url) as response:
-        html = response.read().decode('utf-8')
+    req = requests.get('https://intranet.hbtn.io/status')
 
     print('Body response:')
-    print('\t- type: {}'.format(type(html)))
-    print('\t- content: {}'.format(html))
-
+    print('\t- type: {_type}'.format(_type=type(req.text)))
+    print('\t- content: {_content}'.format(_content=req.text))
